@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
-const fetch = require('node-fetch');
 
 /* GET users listing. */
-router.post('/', function(req, res) {
-console.log(req.body);});
+router.get('/', function(req, res) {
+console.log("Webhook route");
+res.send('Webhook route')
+});
 
 module.exports = router;

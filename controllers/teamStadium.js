@@ -12,7 +12,6 @@ async function teamStadium(teams) {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json", // Specify JSON response
           "x-rapidapi-host": "v3.football.api-sports.io",
           "x-rapidapi-key": process.env.FOOTBALL_API_KEY,
         },

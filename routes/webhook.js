@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const teamInfo = require("../controllers/teamInfo");
-const teamStadium = require("../controllers/teamStadium");
-const teamRank = require("../controllers/teamRank");
-const teamNextGame = require("../controllers/teamNextGame");
-const teamLastGame = require("../controllers/teamLastGame");
-const teamPlayers = require("../controllers/teamPlayers");
+const teamInfo = require("../modules/teamInfo");
+const teamStadium = require("../modules/teamStadium");
+const teamRank = require("../modules/teamRank");
+const teamNextGame = require("../modules/teamNextGame");
+const teamLastGame = require("../modules/teamLastGame");
+const teamPlayers = require("../modules/teamPlayers");
 
 // All functions in an object
 const intentFunctions = {

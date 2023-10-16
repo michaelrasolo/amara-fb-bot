@@ -7,7 +7,7 @@ var logger = require('morgan');
 const bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/index');
-var webhookRouter = require('./routes/webhook');
+var fullfillmentRouter = require('./routes/fullfillment');
 
 var app = express();
 const cors = require("cors") ;
@@ -19,5 +19,5 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/',indexRouter);
-app.use('/webhook', webhookRouter);
+app.use('/fullfillment', fullfillmentRouter);
 module.exports = app;

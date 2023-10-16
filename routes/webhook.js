@@ -41,4 +41,8 @@ router.post("/", function (req, res) {
   }
 });
 
+router.get('/get', function(req, res) {
+  console.log("index route");
+  res.send('index route')
+  });
 module.exports = router;

@@ -1,6 +1,7 @@
 
 # Amara - FB Messenger Bot
 ![Facebook Messenger Bot](https://res.cloudinary.com/dwccdtirq/image/upload/v1697498988/amara_qbrceq.jpg)
+
 Amara is a Facebook Messenger bot. He can answer questions about 5 teams of the french football league (Paris, Lille, Monaco, Marseille, Lyon).
 The user intent is detected by DialogFlow, a Natural Language Processing plateform. Most of the answer are coming from a node.js application that provide information fetched from an API.
 

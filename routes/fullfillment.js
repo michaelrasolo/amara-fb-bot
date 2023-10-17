@@ -7,7 +7,6 @@ const teamNextGame = require("../modules/teamNextGame");
 const teamLastGame = require("../modules/teamLastGame");
 const teamPlayers = require("../modules/teamPlayers");
 
-// All functions in an object
 const intentFunctions = {
   teamInfo: teamInfo,
   teamStadium: teamStadium,
@@ -15,6 +14,18 @@ const intentFunctions = {
   teamNextGame: teamNextGame,
   teamLastGame: teamLastGame,
   teamPlayers: teamPlayers,
+};
+
+const errorMessage = {
+  fulfillmentMessages: [
+    {
+      text: {
+        text: [
+          `I didn't catch that, can you please rephrase your question ?`,
+        ],
+      },
+    },
+  ],
 };
 
 /* WEBHOOK ROUTE */
@@ -37,7 +48,7 @@ router.post("/", function (req, res) {
   } else {
     // intent name is not recognized
     console.error("Unknown intent:", intent);
-    res.status(400).send("Bad Request");
+    res.send(errorMessage);
   }
 });
 

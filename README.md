@@ -16,6 +16,10 @@ Amara can answer the following topics:
 - Team's ranking in Ligue 1
 - Roster and players
 
+## Demo
+https://github.com/michaelrasolo/amara-fb-bot/assets/127959644/64696db8-4657-44a0-b520-241e4276f439
+
+If you want to test the bot, feel free to contact me at rasolon.michael@gmail.com so I can add you Facebook Developer profil to the app testers.
 
 ## Tech Stack
 **Server:** Node, Express
